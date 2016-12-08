@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A6CF0F91DF955D400D14142 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF0F81DF955D400D14142 /* main.m */; };
+		3A6CF0FC1DF955D400D14142 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF0FB1DF955D400D14142 /* AppDelegate.m */; };
+		3A6CF0FF1DF955D400D14142 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF0FE1DF955D400D14142 /* ViewController.m */; };
+		3A6CF1021DF955D400D14142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6CF1001DF955D400D14142 /* Main.storyboard */; };
+		3A6CF1041DF955D400D14142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6CF1031DF955D400D14142 /* Assets.xcassets */; };
+		3A6CF1071DF955D400D14142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6CF1051DF955D400D14142 /* LaunchScreen.storyboard */; };
+		3A6CF1121DF955D400D14142 /* iclouddrivedemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF1111DF955D400D14142 /* iclouddrivedemoTests.m */; };
+		3A6CF11D1DF955D400D14142 /* iclouddrivedemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF11C1DF955D400D14142 /* iclouddrivedemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A6CF10E1DF955D400D14142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A6CF0EC1DF955D400D14142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6CF0F31DF955D400D14142;
+			remoteInfo = iclouddrivedemo;
+		};
+		3A6CF1191DF955D400D14142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A6CF0EC1DF955D400D14142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6CF0F31DF955D400D14142;
+			remoteInfo = iclouddrivedemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A6CF0F41DF955D400D14142 /* iclouddrivedemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iclouddrivedemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6CF0F81DF955D400D14142 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A6CF0FA1DF955D400D14142 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A6CF0FB1DF955D400D14142 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A6CF0FD1DF955D400D14142 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A6CF0FE1DF955D400D14142 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A6CF1011DF955D400D14142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A6CF1031DF955D400D14142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A6CF1061DF955D400D14142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A6CF1081DF955D400D14142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6CF10D1DF955D400D14142 /* iclouddrivedemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iclouddrivedemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6CF1111DF955D400D14142 /* iclouddrivedemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iclouddrivedemoTests.m; sourceTree = "<group>"; };
+		3A6CF1131DF955D400D14142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6CF1181DF955D400D14142 /* iclouddrivedemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iclouddrivedemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6CF11C1DF955D400D14142 /* iclouddrivedemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iclouddrivedemoUITests.m; sourceTree = "<group>"; };
+		3A6CF11E1DF955D400D14142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A6CF0F11DF955D400D14142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6CF10A1DF955D400D14142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6CF1151DF955D400D14142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A6CF0EB1DF955D400D14142 = {
+			isa = PBXGroup;
+			children = (
+				3A6CF0F61DF955D400D14142 /* iclouddrivedemo */,
+				3A6CF1101DF955D400D14142 /* iclouddrivedemoTests */,
+				3A6CF11B1DF955D400D14142 /* iclouddrivedemoUITests */,
+				3A6CF0F51DF955D400D14142 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A6CF0F51DF955D400D14142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A6CF0F41DF955D400D14142 /* iclouddrivedemo.app */,
+				3A6CF10D1DF955D400D14142 /* iclouddrivedemoTests.xctest */,
+				3A6CF1181DF955D400D14142 /* iclouddrivedemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A6CF0F61DF955D400D14142 /* iclouddrivedemo */ = {
+			isa = PBXGroup;
+			children = (
+				3A6CF0FA1DF955D400D14142 /* AppDelegate.h */,
+				3A6CF0FB1DF955D400D14142 /* AppDelegate.m */,
+				3A6CF0FD1DF955D400D14142 /* ViewController.h */,
+				3A6CF0FE1DF955D400D14142 /* ViewController.m */,
+				3A6CF1001DF955D400D14142 /* Main.storyboard */,
+				3A6CF1031DF955D400D14142 /* Assets.xcassets */,
+				3A6CF1051DF955D400D14142 /* LaunchScreen.storyboard */,
+				3A6CF1081DF955D400D14142 /* Info.plist */,
+				3A6CF0F71DF955D400D14142 /* Supporting Files */,
+			);
+			path = iclouddrivedemo;
+			sourceTree = "<group>";
+		};
+		3A6CF0F71DF955D400D14142 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A6CF0F81DF955D400D14142 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A6CF1101DF955D400D14142 /* iclouddrivedemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6CF1111DF955D400D14142 /* iclouddrivedemoTests.m */,
+				3A6CF1131DF955D400D14142 /* Info.plist */,
+			);
+			path = iclouddrivedemoTests;
+			sourceTree = "<group>";
+		};
+		3A6CF11B1DF955D400D14142 /* iclouddrivedemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6CF11C1DF955D400D14142 /* iclouddrivedemoUITests.m */,
+				3A6CF11E1DF955D400D14142 /* Info.plist */,
+			);
+			path = iclouddrivedemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A6CF0F31DF955D400D14142 /* iclouddrivedemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6CF1211DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemo" */;
+			buildPhases = (
+				3A6CF0F01DF955D400D14142 /* Sources */,
+				3A6CF0F11DF955D400D14142 /* Frameworks */,
+				3A6CF0F21DF955D400D14142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iclouddrivedemo;
+			productName = iclouddrivedemo;
+			productReference = 3A6CF0F41DF955D400D14142 /* iclouddrivedemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A6CF10C1DF955D400D14142 /* iclouddrivedemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6CF1241DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemoTests" */;
+			buildPhases = (
+				3A6CF1091DF955D400D14142 /* Sources */,
+				3A6CF10A1DF955D400D14142 /* Frameworks */,
+				3A6CF10B1DF955D400D14142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6CF10F1DF955D400D14142 /* PBXTargetDependency */,
+			);
+			name = iclouddrivedemoTests;
+			productName = iclouddrivedemoTests;
+			productReference = 3A6CF10D1DF955D400D14142 /* iclouddrivedemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A6CF1171DF955D400D14142 /* iclouddrivedemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6CF1271DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemoUITests" */;
+			buildPhases = (
+				3A6CF1141DF955D400D14142 /* Sources */,
+				3A6CF1151DF955D400D14142 /* Frameworks */,
+				3A6CF1161DF955D400D14142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6CF11A1DF955D400D14142 /* PBXTargetDependency */,
+			);
+			name = iclouddrivedemoUITests;
+			productName = iclouddrivedemoUITests;
+			productReference = 3A6CF1181DF955D400D14142 /* iclouddrivedemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A6CF0EC1DF955D400D14142 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "邱圣军";
+				TargetAttributes = {
+					3A6CF0F31DF955D400D14142 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VWD67942DL;
+						ProvisioningStyle = Automatic;
+					};
+					3A6CF10C1DF955D400D14142 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VWD67942DL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6CF0F31DF955D400D14142;
+					};
+					3A6CF1171DF955D400D14142 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VWD67942DL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6CF0F31DF955D400D14142;
+					};
+				};
+			};
+			buildConfigurationList = 3A6CF0EF1DF955D400D14142 /* Build configuration list for PBXProject "iclouddrivedemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A6CF0EB1DF955D400D14142;
+			productRefGroup = 3A6CF0F51DF955D400D14142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A6CF0F31DF955D400D14142 /* iclouddrivedemo */,
+				3A6CF10C1DF955D400D14142 /* iclouddrivedemoTests */,
+				3A6CF1171DF955D400D14142 /* iclouddrivedemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A6CF0F21DF955D400D14142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6CF1071DF955D400D14142 /* LaunchScreen.storyboard in Resources */,
+				3A6CF1041DF955D400D14142 /* Assets.xcassets in Resources */,
+				3A6CF1021DF955D400D14142 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6CF10B1DF955D400D14142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6CF1161DF955D400D14142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A6CF0F01DF955D400D14142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6CF0FF1DF955D400D14142 /* ViewController.m in Sources */,
+				3A6CF0FC1DF955D400D14142 /* AppDelegate.m in Sources */,
+				3A6CF0F91DF955D400D14142 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6CF1091DF955D400D14142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6CF1121DF955D400D14142 /* iclouddrivedemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6CF1141DF955D400D14142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6CF11D1DF955D400D14142 /* iclouddrivedemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A6CF10F1DF955D400D14142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6CF0F31DF955D400D14142 /* iclouddrivedemo */;
+			targetProxy = 3A6CF10E1DF955D400D14142 /* PBXContainerItemProxy */;
+		};
+		3A6CF11A1DF955D400D14142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6CF0F31DF955D400D14142 /* iclouddrivedemo */;
+			targetProxy = 3A6CF1191DF955D400D14142 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A6CF1001DF955D400D14142 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A6CF1011DF955D400D14142 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A6CF1051DF955D400D14142 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A6CF1061DF955D400D14142 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A6CF11F1DF955D400D14142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A6CF1201DF955D400D14142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A6CF1221DF955D400D14142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VWD67942DL;
+				INFOPLIST_FILE = iclouddrivedemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumiapp.iclouddrivedemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A6CF1231DF955D400D14142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VWD67942DL;
+				INFOPLIST_FILE = iclouddrivedemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumiapp.iclouddrivedemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A6CF1251DF955D400D14142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VWD67942DL;
+				INFOPLIST_FILE = iclouddrivedemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumiapp.iclouddrivedemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iclouddrivedemo.app/iclouddrivedemo";
+			};
+			name = Debug;
+		};
+		3A6CF1261DF955D400D14142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VWD67942DL;
+				INFOPLIST_FILE = iclouddrivedemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumiapp.iclouddrivedemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iclouddrivedemo.app/iclouddrivedemo";
+			};
+			name = Release;
+		};
+		3A6CF1281DF955D400D14142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VWD67942DL;
+				INFOPLIST_FILE = iclouddrivedemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumiapp.iclouddrivedemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iclouddrivedemo;
+			};
+			name = Debug;
+		};
+		3A6CF1291DF955D400D14142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VWD67942DL;
+				INFOPLIST_FILE = iclouddrivedemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sumiapp.iclouddrivedemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iclouddrivedemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A6CF0EF1DF955D400D14142 /* Build configuration list for PBXProject "iclouddrivedemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6CF11F1DF955D400D14142 /* Debug */,
+				3A6CF1201DF955D400D14142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6CF1211DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6CF1221DF955D400D14142 /* Debug */,
+				3A6CF1231DF955D400D14142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A6CF1241DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6CF1251DF955D400D14142 /* Debug */,
+				3A6CF1261DF955D400D14142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A6CF1271DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6CF1281DF955D400D14142 /* Debug */,
+				3A6CF1291DF955D400D14142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A6CF0EC1DF955D400D14142 /* Project object */;
+}
