@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4AF7291DFA43D800C3BC92 /* QSJDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AF7281DFA43D800C3BC92 /* QSJDocument.m */; };
 		3A6CF0F91DF955D400D14142 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF0F81DF955D400D14142 /* main.m */; };
 		3A6CF0FC1DF955D400D14142 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF0FB1DF955D400D14142 /* AppDelegate.m */; };
 		3A6CF0FF1DF955D400D14142 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CF0FE1DF955D400D14142 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4AF7271DFA43D800C3BC92 /* QSJDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSJDocument.h; sourceTree = "<group>"; };
+		3A4AF7281DFA43D800C3BC92 /* QSJDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSJDocument.m; sourceTree = "<group>"; };
 		3A6CF0F41DF955D400D14142 /* iclouddrivedemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iclouddrivedemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6CF0F81DF955D400D14142 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A6CF0FA1DF955D400D14142 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		3A6CF1181DF955D400D14142 /* iclouddrivedemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iclouddrivedemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6CF11C1DF955D400D14142 /* iclouddrivedemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iclouddrivedemoUITests.m; sourceTree = "<group>"; };
 		3A6CF11E1DF955D400D14142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6CF12A1DF955FE00D14142 /* iclouddrivedemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iclouddrivedemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,13 @@
 		3A6CF0F61DF955D400D14142 /* iclouddrivedemo */ = {
 			isa = PBXGroup;
 			children = (
+				3A6CF12A1DF955FE00D14142 /* iclouddrivedemo.entitlements */,
 				3A6CF0FA1DF955D400D14142 /* AppDelegate.h */,
 				3A6CF0FB1DF955D400D14142 /* AppDelegate.m */,
 				3A6CF0FD1DF955D400D14142 /* ViewController.h */,
 				3A6CF0FE1DF955D400D14142 /* ViewController.m */,
+				3A4AF7271DFA43D800C3BC92 /* QSJDocument.h */,
+				3A4AF7281DFA43D800C3BC92 /* QSJDocument.m */,
 				3A6CF1001DF955D400D14142 /* Main.storyboard */,
 				3A6CF1031DF955D400D14142 /* Assets.xcassets */,
 				3A6CF1051DF955D400D14142 /* LaunchScreen.storyboard */,
@@ -209,6 +216,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = VWD67942DL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					3A6CF10C1DF955D400D14142 = {
 						CreatedOnToolsVersion = 8.1;
@@ -277,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6CF0FF1DF955D400D14142 /* ViewController.m in Sources */,
+				3A4AF7291DFA43D800C3BC92 /* QSJDocument.m in Sources */,
 				3A6CF0FC1DF955D400D14142 /* AppDelegate.m in Sources */,
 				3A6CF0F91DF955D400D14142 /* main.m in Sources */,
 			);
@@ -425,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iclouddrivedemo/iclouddrivedemo.entitlements;
 				DEVELOPMENT_TEAM = VWD67942DL;
 				INFOPLIST_FILE = iclouddrivedemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -437,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iclouddrivedemo/iclouddrivedemo.entitlements;
 				DEVELOPMENT_TEAM = VWD67942DL;
 				INFOPLIST_FILE = iclouddrivedemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,6 +529,7 @@
 				3A6CF1231DF955D400D14142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A6CF1241DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +538,7 @@
 				3A6CF1261DF955D400D14142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A6CF1271DF955D400D14142 /* Build configuration list for PBXNativeTarget "iclouddrivedemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +547,7 @@
 				3A6CF1291DF955D400D14142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
