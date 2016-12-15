@@ -32,7 +32,8 @@
  return：读取是否成功
  */
 - (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError{
-    self.data = [contents copy];
+    NSData *theData = contents;
+    self.data = theData;
     return true;
 }
 
