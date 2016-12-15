@@ -259,36 +259,34 @@
             }
             //从集合中删除
             [self.files removeObjectForKey:fileName];
-            
             NSLog(@"删除iCloud Drive文件");
             
         }];
         
         UITableViewRowAction *rowAction2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"下载" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
             
-            NSFileManager *manager = [NSFileManager defaultManager];
-            NSURL *url = [manager URLForUbiquityContainerIdentifier:nil];
-            
-            if (url == nil)
-            {
-                NSLog(@"iCloud未激活");
-                return;
-            }
-            
             NSArray *fileNames = self.files.allKeys;
             NSString *fileName = fileNames[indexPath.row];
-            
-            NSURL *iCloudUrl = [NSURL URLWithString:fileName relativeToURL:url];
+            NSURL *urls = [self getUbiquityFileURL:fileName];
             
             NSLog(@"%@",fileName);
-            NSLog(@"%@",iCloudUrl);
+            NSLog(@"%@",urls);
+            
+            NSFileManager *fm = [NSFileManager defaultManager];
             
             //调用下载方法
-            if(![self downloadFileIfNotAvailable:iCloudUrl]){
+            if(![fm startDownloadingUbiquitousItemAtURL:urls error:nil]){
                 NSLog(@"下载失败");
             }else{
                 NSLog(@"下载成功");
             }
+            QSJDocument *document = [[QSJDocument alloc] initWithFileURL:urls];
+            [document openWithCompletionHandler:^(BOOL success) {
+                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                NSString *docDir = [paths objectAtIndex:0];
+                [document.data writeToFile:docDir atomically:true];
+            }];
+        
             
         }];
         
@@ -299,30 +297,5 @@
     
 }
 
-//Apple官方提供的下载方法
-- (BOOL)downloadFileIfNotAvailable:(NSURL*)file {
-    NSNumber*  isIniCloud = nil;
-    if ([file getResourceValue:&isIniCloud forKey:NSURLIsUbiquitousItemKey error:nil]) {
-        // If the item is in iCloud, see if it is downloaded.
-        if ([isIniCloud boolValue]) {
-            NSNumber*  isDownloaded = nil;
-            if ([file getResourceValue:&isDownloaded forKey:NSURLUbiquitousItemDownloadingStatusKey error:nil]) {
-                if ([isDownloaded boolValue])
-                    return YES;
-                
-                // Download the file.
-                NSFileManager*  fm = [NSFileManager defaultManager];
-                NSError *downloadError = nil;
-                [fm startDownloadingUbiquitousItemAtURL:file error:&downloadError];
-                if (downloadError) {
-                    NSLog(@"Error occurred starting download: %@", downloadError);
-                }
-                return NO;
-            }
-        }
-    }
-    // Return YES as long as an explicit download was not started.
-    return YES;
-}
 
 @end
