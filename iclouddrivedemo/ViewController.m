@@ -262,7 +262,7 @@
             NSLog(@"删除iCloud Drive文件");
             
         }];
-        
+        //下载按钮
         UITableViewRowAction *rowAction2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"下载" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
             
             NSArray *fileNames = self.files.allKeys;
@@ -278,17 +278,21 @@
             if(![fm startDownloadingUbiquitousItemAtURL:urls error:nil]){
                 NSLog(@"下载失败");
             }else{
+                //将文档从 iCloud Container 拷贝到 sand Box 中
+                QSJDocument *document = [[QSJDocument alloc] initWithFileURL:urls];
+                [document openWithCompletionHandler:^(BOOL success) {
+                    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                    NSString *docDir = [paths objectAtIndex:0];
+                    //地址要剪裁，
+                    NSString *finalPath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
+                    [document.data writeToFile:finalPath atomically:true];
+                }];
                 NSLog(@"下载成功");
             }
-            QSJDocument *document = [[QSJDocument alloc] initWithFileURL:urls];
-            [document openWithCompletionHandler:^(BOOL success) {
-                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-                NSString *docDir = [paths objectAtIndex:0];
-                [document.data writeToFile:docDir atomically:true];
-            }];
-        
             
         }];
+        
+        [self.localDocumentTabelView reloadData];
         
         rowAction1.backgroundColor = [UIColor redColor];
         rowAction2.backgroundColor = [UIColor blueColor];
