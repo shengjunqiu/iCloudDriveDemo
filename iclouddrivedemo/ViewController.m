@@ -30,6 +30,7 @@
 //当前选中文档
 @property (strong, nonatomic) QSJDocument *document;
 
+
 @end
 
 @implementation ViewController
@@ -272,23 +273,18 @@
             NSLog(@"%@",fileName);
             NSLog(@"%@",urls);
             
-            NSFileManager *fm = [NSFileManager defaultManager];
-            
-            //调用下载方法
-            if(![fm startDownloadingUbiquitousItemAtURL:urls error:nil]){
-                NSLog(@"下载失败");
-            }else{
-                //将文档从 iCloud Container 拷贝到 sand Box 中
-                QSJDocument *document = [[QSJDocument alloc] initWithFileURL:urls];
-                [document openWithCompletionHandler:^(BOOL success) {
-                    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-                    NSString *docDir = [paths objectAtIndex:0];
-                    //地址要剪裁，
-                    NSString *finalPath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
-                    [document.data writeToFile:finalPath atomically:true];
-                }];
-                NSLog(@"下载成功");
-            }
+            [self downloadFileIfNotAvailable:urls];
+            [self showDownloadStatus:urls];
+                
+            QSJDocument *document = [[QSJDocument alloc] initWithFileURL:urls];
+            [document openWithCompletionHandler:^(BOOL success) {
+                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                NSString *docDir = [paths objectAtIndex:0];
+                    
+                NSString *finalPath = [NSString stringWithFormat:@"%@/%@",docDir,fileName];
+                [document.data writeToFile:finalPath atomically:true];
+            }];
+            NSLog(@"下载成功");
             
         }];
         
@@ -301,5 +297,44 @@
     
 }
 
+- (BOOL)downloadFileIfNotAvailable:(NSURL*)file {
+    NSNumber*  isIniCloud = nil;
+    if ([file getResourceValue:&isIniCloud forKey:NSURLIsUbiquitousItemKey error:nil]) {
+        
+        if ([isIniCloud boolValue]) {
+            NSNumber*  isDownloaded = nil;
+            if ([file getResourceValue:&isDownloaded forKey:NSURLUbiquitousItemDownloadingStatusKey error:nil]) {
+                if ([isDownloaded boolValue])
+                    return YES;
+                
+                NSFileManager*  fm = [NSFileManager defaultManager];
+                if (![fm startDownloadingUbiquitousItemAtURL:file error:nil]) {
+                    return NO;
+                }
+                return YES;
+            }
+        }
+    }
+    
+    return YES;
+}
+
+- (void)showDownloadStatus:(NSURL *)fileUrl{
+    NSNumber *isIniCloud = nil;
+    if([fileUrl getResourceValue:&isIniCloud forKey:NSURLIsUbiquitousItemKey error:nil]){
+        if([isIniCloud boolValue]){
+            NSNumber *isDownloaded = nil;
+            NSNumber *isDownloading = nil;
+            if ([fileUrl getResourceValue:&isDownloaded forKey:NSURLUbiquitousItemDownloadingStatusKey error:nil]) {
+                if ([isDownloaded boolValue]) {
+                    NSLog(@"下载完成");
+                }
+            }
+            if ([fileUrl getResourceValue:&isDownloading forKey:NSURLUbiquitousItemDownloadingStatusKey error:nil]) {
+                NSLog(@" 正在下载");
+            }
+        }
+    }
+}
 
 @end
